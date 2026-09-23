@@ -166,3 +166,32 @@ if (aboutSlides.length > 0) {
 
 	startAboutSlider();
 }
+
+const phoneLinks = document.querySelectorAll(".js-phone");
+
+phoneLinks.forEach((phone) => {
+	phone.addEventListener("click", async (e) => {
+		// Telefon / tablet → normalne wybieranie numeru
+		if (window.matchMedia("(max-width: 991px)").matches) {
+			return;
+		}
+
+		// Desktop → kopiowanie
+		e.preventDefault();
+
+		const number = phone.getAttribute("href").replace("tel:", "");
+
+		try {
+			await navigator.clipboard.writeText(number);
+
+			const originalText = phone.textContent;
+			phone.textContent = "Skopiowano!";
+
+			setTimeout(() => {
+				phone.textContent = originalText;
+			}, 1500);
+		} catch (error) {
+			console.error("Nie udało się skopiować numeru:", error);
+		}
+	});
+});
