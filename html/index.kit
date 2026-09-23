@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0"
+		/>
+		<link rel="icon" type="image/png" href="./dist/img/logo_donmartino.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- <link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/9bf94860b7.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Don Martino</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- @include 'nav.kit'-->
+			<header class="header">
+				<div class="header__wrap">
+					<h1 class="header__title">Włoska pizza i kanapki premium</h1>
+					<p class="header__text">
+						Najlepsza pizza włoska w Kolbuszowej tworzona z pasją i sercem!
+					</p>
+					<div class="header__btns">
+						<button class="header__btn"><a href="./#offer">Menu</a></button>
+						<button class="header__btn header__btn--reservation">
+							<a href="./contact.html">Kontakt</a>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="about" id="about">
+					<div class="about__wrap">
+						<h1 class="about__title">O NAS</h1>
+						<div class="about__intro">
+							<div class="about__image">
+								<div class="about__image-frame">
+									<img
+										class="about__slide active"
+										src="./src/img/owner.jpg"
+										alt="Nasza restauracja"
+									/>
+
+									<img
+										class="about__slide"
+										src="./src/img/local.jpg"
+										alt="Nasza restauracja"
+									/>
+
+									<img
+										class="about__slide"
+										src="./src/img/pizzas.jpg"
+										alt="Nasza restauracja"
+									/>
+
+									<img
+										class="about__slide"
+										src="./src/img/salad.jpg"
+										alt="Nasza restauracja"
+									/>
+
+									<img
+										class="about__slide"
+										src="./src/img/panino.jpg"
+										alt="Nasza restauracja"
+									/>
+									<img
+										class="about__slide"
+										src="./src/img/sick.jpg"
+										alt="Nasza restauracja"
+									/>
+								</div>
+
+								<!-- KROPKI -->
+
+								<div class="about__dots">
+									<button
+										class="about__dot active"
+										aria-label="Zdjęcie 1"
+									></button>
+
+									<button class="about__dot" aria-label="Zdjęcie 2"></button>
+
+									<button class="about__dot" aria-label="Zdjęcie 3"></button>
+
+									<button class="about__dot" aria-label="Zdjęcie 4"></button>
+
+									<button class="about__dot" aria-label="Zdjęcie 5"></button>
+									<button class="about__dot" aria-label="Zdjęcie 6"></button>
+								</div>
+							</div>
+
+							<!-- TEKST -->
+
+							<div class="about__intro-content">
+								<span class="about__intro-label">
+									Kilka słów od właściciela
+								</span>
+
+								<h2 class="about__intro-title">Buongiorno!</h2>
+
+								<p>
+									Cześć! Jestem Marcin i jako pizzaiolo działam już kilka lat.
+									To miejsce to moja „druga pizzeria”, a raczej lekko rozwinięte
+									miejsce, które zaczęło się w „budzie” przy ulicy Jana Pawła
+									II.
+								</p>
+
+								<p>
+									Powstało z pasji — wkładam w nie całe serce i mnóstwo czasu,
+									by wraz ze swoimi współpracownikami serwować Wam jedzenie na
+									najwyższym poziomie, w przystępnych cenach.
+								</p>
+
+								<p>
+									Stawiamy przede wszystkim na jakość, nie robimy masówki!
+									Właśnie dlatego czasem trzeba „chwilę” poczekać na swoje
+									zamówienie, ale zapewniam, że robimy co w naszej mocy, by
+									wszystko było podane jak najszybciej, z zachowaniem
+									odpowiednich standardów.
+									<i class="fa-regular fa-face-smile"></i>
+								</p>
+
+								<p>
+									Zapraszam Was do skosztowania naszej specjalności. Wypiekamy
+									hybrydę pizzy klasycznej z neapolitańską, na cienkim, długo
+									dojrzewającym cieście, dzięki czemu nasza pizza jest lekka,
+									puszysta i przyjazna dla brzuchów naszych Gości.
+									<i class="fa-regular fa-face-smile"></i>
+								</p>
+
+								<p>
+									W ofercie mamy również pyszne włoskie kanapki z pieczywa
+									własnego wypieku — panino i panuozzo — a także przystawki,
+									sałatki, napoje oraz strefę 0%.
+								</p>
+
+								<p>
+									W menu każdej opcji znjaduje się słowniczek, z którego dowiesz
+									się więcej o składnikach, których używamy do naszych dań.
+								</p>
+
+								<p>
+									Czasem zdarzy się, że ciasto kończy się szybciej, niż się tego
+									spodziewaliśmy i nie ma możliwości szybkiego dorobienia,
+									ponieważ musi swoje odleżeć i przejść poprawny proces
+									fermentacyjny, byśmy mogli Wam je zaserwować — bez obaw o
+									Wasze kubki smakowe i żołądki.
+									<i class="fa-solid fa-face-smile"></i>
+								</p>
+							</div>
+						</div>
+						<p class="about__text">Dlaczego warto do nas wpaść?</p>
+						<div class="about__box">
+							<div class="about__item">
+								<i class="fa-solid fa-clock"></i>
+								<h2 class="about__item__title">Długo dojrzewające ciasto</h2>
+								<p class="about__item__text">
+									Dajemy ciastu czas, dzięki czemu pizza jest lekka, puszysta,
+									pełna smaku i bezpieczna dla Waszych brzuszków.
+								</p>
+							</div>
+							<div class="about__item">
+								<i class="fa-solid fa-pizza-slice" style="color: #ca0404"></i>
+								<h2 class="about__item__title">
+									Jedno ciasto, wiele możliwości
+								</h2>
+								<p class="about__item__text">
+									Z naszego ciasta przygotowujemy nie tylko pizzę, ale również
+									panino, panuozzo i pieczywo do naszych dań.
+								</p>
+							</div>
+							<div class="about__item">
+								<i class="fa-solid fa-utensils"></i>
+
+								<h2 class="about__item__title">
+									Włoskie inspiracje, nasz charakter
+								</h2>
+								<p class="about__item__text">
+									Włoskie smaki są dla nas inspiracją, ale najważniejsze jest
+									tworzenie jedzenia, które sami chcemy jeść.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="offer" id="offer">
+					<div class="offer__wrap">
+						<h1 class="offer__title">Menu</h1>
+						<p class="offer__text">
+							Na co masz dziś ochotę? Realizujemy zamównienia na miejscu, na
+							dowóz i na wynos!
+						</p>
+						<div class="offer__box">
+							<div class="offer__card">
+								<div class="offer__img offer__img--one">
+									<p class="offer__type">Pizza włoska</p>
+								</div>
+								<div class="offer__desc">
+									<h2 class="offer__name">Pizza włoska</h2>
+									<p class="offer__paragraph">
+										Nasza specjalność — hybryda pizzy klasycznej i
+										neapolitańskiej na cienkim, długo dojrzewającym cieście.
+										Włoski charakter, ale po naszemu.
+									</p>
+									<button class="offer__btn">
+										<a href="./menu_pizza.html">Sprawdzam</a>
+									</button>
+								</div>
+							</div>
+							<div class="offer__card">
+								<div class="offer__img offer__img--two">
+									<p class="offer__type">Kanapki premium</p>
+								</div>
+								<div class="offer__desc">
+									<h2 class="offer__name">Kanapki premium</h2>
+									<ul class="offer__list">
+										<li class="offer__item">Pannino</li>
+										<li class="offer__item">Panuozzo</li>
+									</ul>
+									<p class="offer__paragraph">
+										Z tego samego ciasta robimy również panino i panuozzo. W
+										środku znajdziesz włoskie składniki i konkretne porcje
+										dobrego jedzenia.
+									</p>
+									<button class="offer__btn">
+										<a href="./menu_premium.html">Sprawdzam</a>
+									</button>
+								</div>
+							</div>
+							<div class="offer__card">
+								<div class="offer__img offer__img--three">
+									<p class="offer__type">Inne</p>
+								</div>
+								<div class="offer__desc">
+									<h2 class="offer__name">Inne</h2>
+									<ul class="offer__list">
+										<li class="offer__item">Przystawki</li>
+										<li class="offer__item">Sałatki</li>
+										<!-- <li class="offer__item">Desery</li> -->
+										<li class="offer__item">Napoje</li>
+									</ul>
+									<p class="offer__paragraph">
+										Nie samą pizzą człowiek żyje. Mamy też przystawki, sałatki,
+										napoje i coś dla tych, którzy wybierają strefę 0%.
+									</p>
+									<button class="offer__btn">
+										<a href="./menu_other.html">Sprawdzam</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="socials">
+					<div class="socials__wrap">
+						<p class="socials__text">Wbijaj na nasze sociale!</p>
+						<div class="socials__btns">
+							<button class="socials__btn socials__btn--facebook">
+								<a href="https://www.facebook.com/DonMartinoKlb" target="_blank"
+									>Facebook</a
+								>
+							</button>
+							<button class="socials__btn">
+								<a
+									href="https://www.instagram.com/donmartinoklb/"
+									target="_blank"
+									>Instagram</a
+								>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="clients">
+					<div class="clients__wrap">
+						<h1 class="clients__title">Opinie</h1>
+						<p class="clients__text">
+							Na Google mamy ocenę <b>4.7/5</b> przy blisko <b>300</b> opiniach.
+							Dziękujemy! Więcej opinii
+							<a
+								href="https://www.google.com/search?client=firefox-b-d&hs=WsLB&sca_esv=118820592a22ad4b&sxsrf=APpeQnu-lBpDyJvN6eV0OT08vbxkPmx90A:1790161162159&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4r-nou7DOdVZWzpkCMfGWJjHtA9TlEWSbLYuqBHaV4fgsfrL_aU141oq_2dda_bnebtD4SCvXAy-FT3z_oX9-RmUw7bTXElXflqdaxjhJzZdBB8rKw1_3WiGvGhvrNFKR1HsQLlg&q=Don+Martino+Opinie&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_xUXik83wFkeMqjpKoWytYIZ0751PQRGnq3C0V7CYhrJaikJqiw176EzAku1L6ESTVEwHE-AUcwGXKXzB9Hl_dUEnxVZ&hl=pl-PL&sa=X&ved=2ahUKEwin0KSBxoSXAxVqDRAIHVMFHQIQ_4MLegQILhAO&biw=1920&bih=955&dpr=1#sv=CAES-QEK5QES4gEKogFBSmlUNHRKRm9WMkZweEM1bkM5c1M1d3VJQkhSbHNJMmNlcFdaVDlFRmNocFFPNDFkYlVGX210RDdQYnR3Q0NyZWVmVEJ3OGtLVTA0RjE5Z2NyTkhyT21pZDVZVGZwa1BZTmN6U040WXYtdUxTRmFkLVdoNjRoQzFoZjdqM1hlYnlacHRVVWJOX1pVSndwV3hFQzZCVVA4LWR6ZmEyRlVfMlESF0tyT3phdm5wSE5TX2lNMFB1cW5vcUFjGiJBRHNyOWZUTk5KblV5NkRBbGR3RUxVUUQwaUtYSk5BUjdnEgQ4MTE0GgEzKgAwADgBQAAYACD8ofaiCUoCEAE"
+								target="_blank"
+								style="color: #ca0404"
+							>
+								tutaj</a
+							>.
+						</p>
+
+						<div class="swiper-container clients__box">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide clients__item">
+									<h3 class="clients__name">Ania Członka<span>5/5</span></h3>
+									<p class="clients__opinion">
+										Pizza była mega pyszna 😍 Świeże składniki, super smak i
+										idealnie wypieczone ciasto – wszystko naprawdę na plus.
+										Widać, że robiona z dbałością o szczegóły. Do tego bardzo
+										miła i uśmiechnięta obsługa, dzięki czemu klimat był ekstra.
+										Na pewno jeszcze wrócę! 🍕😊
+									</p>
+								</div>
+								<div class="swiper-slide clients__item clients__item--gray">
+									<h3 class="clients__name">Marcin Biłas<span>5/5</span></h3>
+									<p class="clients__opinion">
+										Pizza bardzo smaczna, w moim przypadku była to pozycja 16. z
+										pistacjami i miodem. Bardzo ciekawe doświadczenie smakowe 🙂
+										Polecam sprawdzić, a tym bardziej odwiedzić podczas pobytu w
+										Kolbuszowej.
+									</p>
+								</div>
+								<div class="swiper-slide clients__item">
+									<h3 class="clients__name">
+										Kuba
+										<span>4/5</span>
+									</h3>
+									<p class="clients__opinion">
+										Bardzo dobra pizza salame con pistacchio. Polecam
+									</p>
+								</div>
+								<div class="swiper-slide clients__item">
+									<h3 class="clients__name">Patrycja L<span>5/5</span></h3>
+									<p class="clients__opinion">
+										Trafiłam przypadkiem do tego miejsca i nie żałuję bo
+										jedzenie przepyszne ! Pizza typowo włoska z najwyższej
+										jakości składników. Pan właściciel bardzo pracowity który
+										zna się na kuchni włoskiej. Z czystym sumieniem mogę polecić
+										to miejsce i napewno wrócę bo warto!
+									</p>
+								</div>
+								<div class="swiper-slide clients__item clients__item--gold">
+									<h3 class="clients__name">
+										Hubert Zagrobelny<span>5/5</span>
+									</h3>
+									<p class="clients__opinion">
+										Bardzo dobra włoska kuchnia. Pizza ma bardzo dobre,
+										pulchniutkie ciasto. Świeże włoskie składniki. Pan robiący
+										pizzę bardzo miły. Widać było że mają duży ruch. Nie dziwię
+										się w ogóle, bo żarcie pyszne. Trochę mogli by ogarnąć
+										wnętrze lokalu, bo jest czysto, ale przydało by się jakieś
+										odświeżenie lokalu (pomalowanie ścian, demontaż parawanów
+										itp). Jak będę w pobliżu to na pewno wrócę.
+									</p>
+								</div>
+								<div class="swiper-slide clients__item">
+									<h3 class="clients__name">
+										Wiktoria Samojedny
+										<span>5/5</span>
+									</h3>
+									<p class="clients__opinion">
+										Nareszcie w Kolbuszowej pizza z pesto ❤️ jest przepyszna!
+										Bardzo polecam ❤️
+									</p>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="gift">
+					<h1 class="gift__title">Chcesz podarować komuś coś pysznego?</h1>
+					<p class="gift__text">
+						Możesz zakupić u nas
+						<span style="color: #ca0404"><b>BON</b></span> na ulubioną pizzę lub
+						kanapkę - to będzie zawsze trafiony prezent!
+					</p>
+				</section>
+			</main>
+			<!-- @include 'footer.kit'-->
+		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./dist/js/swiper.min.js"></script>
+		<script src="./dist/js/main.min.js"></script>
+	</body>
+</html>

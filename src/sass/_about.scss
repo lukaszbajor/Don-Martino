@@ -1,0 +1,412 @@
+.about {
+	padding-bottom: 4em;
+	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		margin: 1.5em 0;
+		padding: 0 0.5em;
+		text-align: center;
+		font-size: 4rem;
+		color: $pure-black;
+	}
+	&__text {
+		color: $pure-black;
+		letter-spacing: 1px;
+		font-weight: 500;
+	}
+	&__box {
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item {
+		margin-top: 1em;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// border: 1px solid $docs-color;
+		border-radius: 8px;
+		color: $pure-black;
+		&__title {
+			padding: 1em;
+			text-align: center;
+		}
+		&__text {
+			font-size: 1.8rem;
+			font-weight: 200;
+			text-align: center;
+		}
+		i {
+			font-size: 5rem;
+			color: $docs-color;
+		}
+		i.fa-user {
+			color: $pure-black;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.about {
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__item {
+			flex-basis: 55%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about {
+		&__text {
+			font-size: 2rem;
+		}
+		&__item {
+			justify-content: center;
+			flex-basis: 45%;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.about {
+		&__item {
+			flex-basis: 33%;
+		}
+	}
+}
+
+.about {
+	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 4rem 1.5rem;
+	}
+
+	// ========================================
+	// TYTUŁ
+	// ========================================
+
+	&__title {
+		margin: 0 0 3.5rem;
+
+		text-align: center;
+	}
+
+	// ========================================
+	// GALERIA + TEKST
+	// ========================================
+
+	&__intro {
+		display: flex;
+		flex-direction: column;
+
+		gap: 3rem;
+
+		margin-bottom: 5rem;
+	}
+
+	// ========================================
+	// GALERIA
+	// ========================================
+
+	&__image {
+		position: relative;
+
+		width: 100%;
+	}
+
+	&__image-frame {
+		position: relative;
+
+		z-index: 1;
+
+		width: 100%;
+
+		aspect-ratio: 4 / 5;
+
+		overflow: hidden;
+
+		border-radius: 2px;
+
+		background: #eee;
+	}
+
+	// Czerwona ramka
+
+	&__image-frame::before {
+		content: "";
+
+		position: absolute;
+
+		z-index: -1;
+
+		top: -1.5rem;
+		left: -1.5rem;
+
+		width: 100%;
+		height: 100%;
+
+		// border: 3px solid $main-red;
+
+		pointer-events: none;
+	}
+
+	// ========================================
+	// ZDJĘCIA
+	// ========================================
+
+	&__slide {
+		position: absolute;
+
+		inset: 0;
+
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+
+		opacity: 0;
+
+		transform: scale(1.04);
+
+		transition: opacity 0.8s ease, transform 5s ease;
+
+		pointer-events: none;
+	}
+
+	&__slide.active {
+		opacity: 1;
+
+		transform: scale(1);
+	}
+
+	// ========================================
+	// KROPKI
+	// ========================================
+
+	&__dots {
+		position: absolute;
+
+		z-index: 5;
+
+		bottom: -1.3rem;
+		left: 50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		gap: 0;
+
+		transform: translateX(-50%);
+	}
+
+	&__dot {
+		width: 20px;
+		height: 4px;
+
+		margin: 0 4px;
+
+		padding: 0;
+
+		border: none;
+		border-radius: 0;
+
+		background-color: $main-red;
+
+		opacity: 0.35;
+
+		cursor: pointer;
+
+		transition: width 0.3s ease, opacity 0.3s ease;
+	}
+
+	&__dot:hover {
+		opacity: 0.7;
+	}
+
+	&__dot.active {
+		width: 35px;
+
+		opacity: 1;
+
+		transform: none;
+	}
+
+	// ========================================
+	// TEKST OBOK GALERII
+	// ========================================
+
+	&__intro-content {
+		max-width: 100%;
+
+		text-align: center;
+	}
+
+	&__intro-label {
+		display: inline-block;
+
+		margin-bottom: 1.5rem;
+
+		color: $main-red;
+
+		font-size: 1.4rem;
+		font-weight: 700;
+
+		letter-spacing: 0.15em;
+
+		text-transform: uppercase;
+	}
+
+	&__intro-title {
+		margin: 0 0 2rem;
+
+		font-size: 2.7rem;
+
+		line-height: 1.15;
+	}
+
+	&__intro-content p {
+		margin: 0 0 1.5rem;
+
+		font-size: 1.8rem;
+		font-weight: 200;
+
+		line-height: 1.7;
+	}
+
+	// ========================================
+	// PYTANIE
+	// ========================================
+
+	&__text {
+		margin: 0 0 3.5rem;
+
+		text-align: center;
+
+		font-size: 3rem;
+	}
+
+	// ========================================
+	// 3 KAFELKI
+	// ========================================
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+
+		gap: 3rem;
+	}
+}
+
+// ========================================
+// DESKTOP
+// ========================================
+
+@media (min-width: 922px) {
+	.about {
+		&__wrap {
+			padding: 6rem 2rem;
+		}
+
+		&__title {
+			margin-bottom: 5rem;
+		}
+
+		// ========================================
+		// GALERIA + TEKST OBOK SIEBIE
+		// ========================================
+
+		&__intro {
+			display: grid;
+
+			grid-template-columns:
+				minmax(0, 1fr)
+				minmax(0, 1fr);
+
+			align-items: center;
+
+			gap: 7rem;
+
+			margin-bottom: 8rem;
+		}
+
+		// ========================================
+		// GALERIA
+		// ========================================
+
+		&__image-frame {
+			aspect-ratio: 4 / 5;
+		}
+
+		&__image-frame::before {
+			top: -2rem;
+			left: -2rem;
+		}
+
+		// ========================================
+		// TEKST
+		// ========================================
+
+		&__intro-content {
+			max-width: 500px;
+
+			text-align: left;
+		}
+
+		&__intro-title {
+			font-size: clamp(2.8rem, 4vw, 4.2rem);
+		}
+
+		&__intro-content p {
+			font-size: 1.6rem;
+		}
+
+		// ========================================
+		// PYTANIE
+		// ========================================
+
+		&__text {
+			margin-bottom: 5rem;
+		}
+
+		// ========================================
+		// 3 KAFELKI OBOK SIEBIE
+		// ========================================
+
+		&__box {
+			display: grid;
+
+			grid-template-columns: repeat(3, 1fr);
+
+			gap: 4rem;
+		}
+
+		&__dots {
+			bottom: -2rem;
+		}
+
+		&__dot {
+			width: 20px;
+			height: 4px;
+			cursor: pointer;
+		}
+
+		&__dot.active {
+			width: 35px;
+		}
+	}
+}

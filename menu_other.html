@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0"
+		/>
+		<link rel="icon" type="image/png" href="/src/img/fav.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/9bf94860b7.js"
+			crossorigin="anonymous"
+		></script>
+		<title>KSM - Salon kosmetologiczny</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<nav class="nav">
+	<div class="nav__wrap">
+		<div class="nav__logo">
+			<a href="./#">
+				<img src="./dist/img/logo_donmartino.png" alt="logo" />
+			</a>
+		</div>
+		<div class="nav__menu">
+			<ul class="nav__list">
+				<li class="nav__link"><a href="./#about">O nas</a></li>
+				<li class="nav__link"><a href="./#offer">Menu</a></li>
+				<li class="nav__link"><a href="./contact.html">Kontakt</a></li>
+				<li class="nav__link">
+					<img src="./src/img/logo_donmartino.png" alt="logo" />
+				</li>
+			</ul>
+		</div>
+		<div class="nav__burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</nav>
+
+			<main>
+				<section class="page">
+					<div class="info-buttons">
+						<button class="info-button" data-tooltip="slowniczek">
+							<i class="fa-solid fa-book-open"></i>
+							<span>Słowniczek</span>
+						</button>
+
+						<button class="info-button" data-tooltip="promocja">
+							<i class="fa-solid fa-percent"></i>
+							<span>Promocja</span>
+						</button>
+
+						<button class="info-button" data-tooltip="dowoz">
+							<i class="fa-solid fa-truck"></i>
+							<span>Dowóz</span>
+						</button>
+						<button class="info-button" data-tooltip="dodatki">
+							<i class="fa-solid fa-plus"></i>
+							<span>Dodatki</span>
+						</button>
+					</div>
+
+					<!-- SŁOWNICZEK -->
+
+					<div class="info-modal" id="slowniczek">
+						<div class="info-modal__content">
+							<button class="info-modal__close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+
+							<h2>Słowniczek</h2>
+
+							<div class="dictionary">
+								<div class="dictionary__item">
+									<b>Mozzarella FdL</b>
+									<span>ser z mleka krowiego</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Prosciutto Cotto</b>
+									<span>włoska szynka gotowana</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Prosciutto Crudo</b>
+									<span>włoska szynka parmeńska, długo dojrzewająca</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Salami Napoli</b>
+									<span>włoskie salami wieprzowe</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Spianata Piccante</b>
+									<span>włoskie, pikantne salami wieprzowe</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Nduja</b>
+									<span
+										>włoska, pikantna kiełbasa z mielonego mięsa wieprzowego, o
+										miękkiej konsystencji, z dodatkiem chili</span
+									>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Gorgonzola Piccante D.O.P.</b>
+									<span>włoski ser pleśniowy o lekko pikantnym smaku</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Grana Padano D.O.P.</b>
+									<span>włoski, dojrzewający, twardy ser z mleka krowiego</span>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Ricotta</b>
+									<span
+										>włoski, niedojrzewający ser, produkowany z serwatki mleka
+										krowiego</span
+									>
+								</div>
+
+								<div class="dictionary__item">
+									<b>Stracciatella</b>
+									<span>środek z sera burrata</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- PROMOCJA -->
+
+					<div class="info-modal" id="promocja">
+						<div class="info-modal__content">
+							<button class="info-modal__close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+
+							<h2>Promocja</h2>
+
+							<p class="info-modal__subtitle">Wtorki, środy i czwartki</p>
+
+							<div class="promo-list">
+								<div class="promo-item">
+									<strong>Zamów 2 pizze</strong>
+									<span>3. cia dowolna za 20 zł</span>
+								</div>
+
+								<div class="promo-item">
+									<strong>Zamów 3 pizze</strong>
+									<span>4. ta Margherita za darmo</span>
+								</div>
+
+								<div class="promo-item">
+									<strong>Zamów 4 pizze</strong>
+									<span>5. ta dowolna pizza za darmo</span>
+								</div>
+							</div>
+							<p style="margin-top: 20px; color: #ca0404">
+								<b>
+									Wspomnij o promocji przy składaniu zamówenia. Działa również
+									na dowozy!</b
+								>
+							</p>
+						</div>
+					</div>
+
+					<!-- DOWÓZ -->
+
+					<div class="info-modal" id="dowoz">
+						<div class="info-modal__content">
+							<button class="info-modal__close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+
+							<h2>Dowóz</h2>
+
+							<div class="delivery-list">
+								<div class="delivery-item">
+									<div>
+										<strong>Kolbuszowa</strong>
+										<strong>Kolbuszowa Górna</strong>
+										<strong>Kolbuszowa Dolna</strong>
+									</div>
+
+									<span class="delivery-free">
+										GRATIS<br />
+										<small>zamówienia za minimum 50 zł</small>
+									</span>
+								</div>
+
+								<div class="delivery-item">
+									<div>
+										<strong>Werynia</strong>
+										<strong>Bukowiec</strong>
+										<strong>Zarębki</strong>
+										<strong>Świerczów</strong>
+										<strong>Nowa Wieś</strong>
+									</div>
+
+									<span>
+										8 zł<br />
+										<small>zamówienia za minimum 50 zł</small><br />
+										<b>GRATIS</b><br />
+										<small>zamówienia powyżej 200 zł</small>
+									</span>
+								</div>
+
+								<div class="delivery-item">
+									<div>
+										<strong>Cmolas</strong>
+										<strong>Trześń</strong>
+										<strong>Domatków</strong>
+										<strong>Brzezówka</strong>
+									</div>
+
+									<span>
+										10 zł<br />
+										<small>zamówienia za minimum 80 zł</small><br />
+										<b>GRATIS</b><br />
+										<small>zamówienia powyżej 200 zł</small>
+									</span>
+								</div>
+
+								<div class="delivery-item">
+									<div>
+										<strong>Dzikowiec</strong>
+										<strong>Trzęsówka</strong>
+										<strong>Siedlanka</strong>
+									</div>
+
+									<span>
+										12 zł<br />
+										<small>zamówienia za minimum 150 zł</small><br />
+										<b>GRATIS</b><br />
+										<small>zamówienia powyżej 200 zł</small>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-modal" id="dodatki">
+						<div class="info-modal__content">
+							<button class="info-modal__close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+
+							<h2>Dodatki</h2>
+
+							<div class="extras-list">
+								<div class="extra-item">
+									<span>Sos czosnkowy</span>
+									<b>3 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Ketchup</span>
+									<b>3 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Sos pomidorowy</span>
+									<b>3 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Dodatkowa oliwa (na wynos)</span>
+									<b>2 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Oliwa smakowa (na wynos)</span>
+									<b>3 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>„Zburattuj pickę”</span>
+									<b>13 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Dodatkowy składnik mięsny</span>
+									<b>7 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Dodatkowy składnik warzywny</span>
+									<b>4 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Pudełko na pizzę</span>
+									<b>2 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Pudełko na sałatkę</span>
+									<b>2 zł</b>
+								</div>
+
+								<div class="extra-item">
+									<span>Małe pudełko na kanapkę lub kawałki</span>
+									<b>1 zł</b>
+								</div>
+							</div>
+
+							<div class="extras-notes">
+								<p>
+									Nie podwajamy sera, bo zrobi się „zupa”
+									<i class="fa-regular fa-face-smile"></i>
+								</p>
+
+								<p>
+									Nie polecamy też przesadzać ze składnikami,<br />
+									włoska pizza najlepiej smakuje z 3/4 dodatkami
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="page__wrap">
+						<h1 class="page__title">Przystawki</h1>
+
+						<div class="page__box">
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">
+										1. Talerz włoskich wędlin i serów
+									</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>70 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> Talerz włoskich wędlin i serów, podawany z
+									konfiturą figową, pesto genovese, rukolą oraz naszym
+									pieczywkiem
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">2. Burratina</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>36 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> Burrata serwowana na rukoli, otoczona plastrami
+									ProsciuttoCrudo, podawana z pesto genovese, kremem
+									balsamicznym oraz naszym pieczywkiem
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">3. Foccacia di romana</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>24 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> Foccacia z naszego ciasta na pizzę, serwowana z
+									pesto genovese i konfiturą figową oraz oliwą
+								</p>
+							</div>
+						</div>
+
+						<h1 class="page__title">Sałatki</h1>
+
+						<div class="page__box">
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">1. Rucca</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>29 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> mix sałat z rukolą, pomidorki koktajlowe,
+									oliwki, czerwona cebula, Grana Padano D.O.P.
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">2. Dolce crudo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>33 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> mix sałat z rukolą, gruszka, gorgonzola,
+									ProsciuttoCrudo, orzechy włoskie, miód, krem balsamiczny
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">3. Pollo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>31 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> mix sałat z rukolą, pomidorki koktajlowe,
+									oliwki, czerwona cebula, suszone pomidory, straciatella
+								</p>
+							</div>
+							<p style="margin-top: 10px; margin-left: 5px">
+								Do każdej sałatki dołączamy pieczywo robione z naszego ciasta na
+								pizzę!
+							</p>
+						</div>
+
+						<h1 class="page__title">Napoje</h1>
+
+						<div class="page__box">
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">1. Woda niegazowana / gazowana</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>6–7 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> butelka plastikowa: 6 zł, szklana: 7 zł
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">2. Włoski napój Acheo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>12 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer"><b>Opis:</b> włoski napój Acheo</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">3. Coca Cola</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>9–11 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> butelka: 11 zł, puszka: 9 zł
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">4. Sok z rurką Tymbark</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>5 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer"><b>Opis:</b> sok z rurką Tymbark</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">5. Lemoniada</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>14 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer"><b>Opis:</b> o smaki zapytaj obsługę</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">
+										6. Woda z cytryną, miętą i pomarańczą
+									</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>12 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Opis:</b> dzbanek wody z cytryną, miętą i pomarańczą
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">7. Włoski soczek Yoga</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>10 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Smaki:</b> truskawka, gruszka, jabłko, brzoskwinia-mango
+								</p>
+							</div>
+						</div>
+
+						<h1 class="page__title">Piwo 0%</h1>
+
+						<div class="page__box">
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">1. Piwo 0% — butelka</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>12 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Wybór:</b> Bira Moretti, Bavaria, Gran Malta, Somersby
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">2. Warka radler — puszka</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>9 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer"><b>Rodzaj:</b> Warka radler 0%</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+	<div class="footer__box">
+		<div class="footer__item">
+			<h3 class="footer__title"><a href="./#offer">Menu</a></h3>
+			<ul class="footer__list">
+				<li class="footer__link">
+					<a href="./menu_pizza.html">Pizza włoska</a>
+				</li>
+				<li class="footer__link">
+					<a href="./menu_premium.html">Kanapki premium</a>
+				</li>
+				<li class="footer__link">
+					<a href="./menu_other.html">Przystawki, sałatki i napoje</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__item">
+			<h3 class="footer__title"><a href="./#about">O nas</a></h3>
+			<h3 class="footer__title"><a href="./#contact">Kontakt</a></h3>
+		</div>
+		<div class="footer__item footer__item--logo">
+			<img class="" src="./src/img/logo_donmartino.png" alt="Logo" />
+		</div>
+	</div>
+	<div class="footer__end">
+		<div class="footer__socials">
+			<a href="https://www.facebook.com/DonMartinoKlb" target="_blank"
+				><i class="fa-brands fa-facebook-f"></i
+			></a>
+			<a href="https://www.instagram.com/donmartinoklb/" target="_blank"
+				><i class="fa-brands fa-instagram"></i
+			></a>
+		</div>
+		<p class="footer__author">
+			Pizzeria Don Martino Marcin Bajor<br />
+			<a href="https://lukaszbajor.github.io/CosmosPortfolio/" target="_blank"
+				>Autor: Łukasz Bajor - <span class="footer__year"></span
+			></a>
+		</p>
+	</div>
+</footer>
+
+		</div>
+		<script src="./dist/js/main.min.js"></script>
+	</body>
+</html>

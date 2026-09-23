@@ -1,0 +1,227 @@
+.offer {
+	min-height: 80vh;
+	padding-bottom: 6em;
+	position: relative;
+	background-image: url("../img/menu_image.png");
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__title {
+		margin: 2.2em 0 1em 0;
+		font-size: 4rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $pure-white;
+	}
+	&__text {
+		padding: 0 0.5em;
+		margin-bottom: 2.2em;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-align: center;
+		color: $pure-white;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__card {
+		position: relative;
+		margin: 0.5em 0;
+		width: 350px;
+		height: 600px;
+		perspective: 800px;
+		z-index: 2;
+		border: 1px solid $pure-white;
+	}
+	&__type {
+		display: none;
+		text-align: center;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		object-fit: contain;
+		// border-radius: 15px;
+		transition: 0.8s;
+		&--one {
+			background-image: url("../img/pizza.jpg");
+			background-position: 30% 5%;
+		}
+		&--two {
+			background-image: url("../img/panuozzo.jpg");
+			background-position: 30% 5%;
+		}
+		&--three {
+			background-image: url("../img/salatka.jpg");
+			background-position: 50% 55%;
+		}
+		&--four {
+			background-image: url("../img/hands.png");
+		}
+		&--five {
+			background-image: url("../img/pedicure.png");
+		}
+		&--six {
+			background-image: url("../img/trainings.png");
+		}
+	}
+
+	&__desc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 2em;
+		// border-radius: 15px;
+		text-align: center;
+		// background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8);
+		transition: 0.8s;
+		// opacity: 0;
+		// transform: rotateY(-180deg);
+	}
+	&__name {
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: $pure-white;
+	}
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		padding: 1em 0;
+		border-bottom: 1px solid $pure-white;
+		text-transform: uppercase;
+		font-size: 2rem;
+		color: $pure-white;
+
+		p {
+			text-decoration: none;
+			color: $pure-white;
+			transition: 0.3s;
+			cursor: default;
+		}
+	}
+	&__paragraph {
+		color: $pure-white;
+		text-align: center;
+	}
+	&__list--first:nth-of-type(1) .offer__link {
+		font-size: 1.4rem;
+	}
+	&__list--second:nth-of-type(1) .offer__link {
+		font-size: 1.5rem;
+	}
+	&__list--third:nth-of-type(1) .offer__link {
+		margin-top: 10em;
+	}
+	&__link:last-child {
+		border-bottom: unset;
+	}
+	&__btn {
+		margin-top: 1.2em;
+		padding: 0.5em 1.5em;
+		background-color: $docs-color;
+		// border-radius: 20px;
+		border: 2px solid $docs-color;
+		text-transform: uppercase;
+		font-family: "Roboto", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+		letter-spacing: 2px;
+		color: $pure-white;
+		a {
+			color: $pure-white;
+			text-decoration: none;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.offer {
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__card {
+			margin: 0.5em;
+			flex-basis: 55%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.offer {
+		&__card {
+			flex-basis: 48%;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.offer {
+		&__card {
+			flex-basis: 31%;
+		}
+		&__card:hover .offer__img {
+			transform: rotateY(-180deg);
+			opacity: 0;
+		}
+		&__card:hover .offer__desc {
+			transform: rotateY(0);
+			opacity: 1;
+		}
+		&__img {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+		&__type {
+			margin-bottom: 2em;
+			display: block;
+			text-transform: uppercase;
+			font-size: 2rem;
+			font-weight: 400;
+			color: $pure-white;
+		}
+		&__desc {
+			background-image: linear-gradient(
+				315deg,
+				#c51e1e 0%,
+				rgba(163, 24, 24, 0.533)
+			);
+			opacity: 0;
+			transform: rotateY(-180deg);
+		}
+
+		&__link {
+			a:hover {
+				color: $desc-color;
+				cursor: pointer;
+			}
+			&__btn {
+				cursor: pointer;
+			}
+		}
+	}
+}

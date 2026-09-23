@@ -1,0 +1,144 @@
+.nav {
+	position: fixed;
+	width: 100%;
+	background-color: $pure-white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 15;
+	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		img {
+			height: 80px;
+		}
+	}
+	&__list {
+		padding-top: 6em;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		bottom: 100%;
+		list-style: none;
+		background-color: $docs-color;
+		color: $pure-white;
+		transition: 0.3s;
+		&--showMenu {
+			top: 0;
+			bottom: 0;
+		}
+	}
+	&__link {
+		margin-top: 2em;
+		font-size: 4rem;
+		font-weight: 200;
+		text-transform: uppercase;
+		img {
+			width: 90px;
+			border: 1px solid $main-red;
+		}
+		a {
+			text-decoration: none;
+			color: $pure-white;
+			cursor: default;
+		}
+	}
+	&__burger {
+		height: 30px;
+		width: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		span {
+			position: absolute;
+			top: 0;
+			height: 3px;
+			width: 100%;
+			background-color: $docs-color;
+			transition: transform 0.3s;
+		}
+		span:nth-child(2) {
+			top: 50%;
+		}
+		span:last-child {
+			top: 100%;
+		}
+		&--active {
+			span {
+				background-color: $pure-white;
+			}
+			span:nth-child(1) {
+				top: 50%;
+				transform: rotate(45deg);
+			}
+			span:nth-child(2) {
+				display: none;
+			}
+			span:nth-child(3) {
+				top: 50%;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav {
+		&__list {
+			padding-top: unset;
+			display: flex;
+			flex-direction: row;
+			position: unset;
+			top: unset;
+			left: unset;
+			bottom: 100%;
+			list-style: none;
+			background-color: unset;
+			color: $docs-color;
+			transition: 0.3s;
+		}
+
+		&__link {
+			margin-top: unset;
+			margin: 0 1em;
+			font-size: 2rem;
+			font-weight: 400;
+			img {
+				display: none;
+			}
+
+			a {
+				padding-bottom: 0.3em;
+				border-bottom: 2px solid transparent;
+				color: $pure-black;
+				transition: all 0.3s;
+				cursor: pointer;
+			}
+			a:hover {
+				border-bottom: 2px solid $pure-black;
+			}
+		}
+		&__link:nth-child(3) {
+			border: 2px solid $pure-black;
+			padding: 0.5em 1em;
+
+			a:hover {
+				border-bottom-color: transparent;
+			}
+		}
+		&__burger {
+			display: none;
+		}
+	}
+}

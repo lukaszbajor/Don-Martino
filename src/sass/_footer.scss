@@ -1,0 +1,151 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	align-items: center;
+	background-color: $pure-black;
+	&__box {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		max-width: 1200px;
+		padding: 3em 0.5em 0.5em 0.5em;
+		border-bottom: 1px solid $pure-white;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 55%;
+		margin-bottom: 2em;
+		padding: 1em;
+		&--logo {
+			flex-basis: 100%;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+
+			img {
+				width: 100%;
+				max-width: 260px;
+				height: auto;
+				object-fit: contain;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 0.5em;
+		font-size: 2.2rem;
+		color: $pure-white;
+		a {
+			color: $pure-white;
+			text-decoration: none;
+		}
+	}
+	&__list {
+		list-style: none;
+	}
+	&__link {
+		margin-top: 0.5em;
+		font-size: 1.8rem;
+		font-weight: 300;
+
+		a {
+			text-decoration: none;
+			color: $pure-white;
+			transition: 0.3s;
+			cursor: default;
+		}
+	}
+	&__end {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2em;
+		display: flex;
+		justify-content: center;
+		color: $pure-white;
+	}
+	&__socials {
+		display: none;
+	}
+	&__author {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		font-size: 1.6rem;
+		text-align: center;
+
+		a {
+			margin-top: 1em;
+			font-size: 1.2rem;
+			text-decoration: none;
+			color: $pure-white;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		&__item {
+			flex-basis: 55%;
+
+			&--logo {
+				flex-basis: 100%;
+
+				img {
+					max-width: 360px;
+				}
+			}
+		}
+		&__end {
+			justify-content: space-between;
+		}
+		&__socials {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 3rem;
+			a {
+				color: $pure-white;
+			}
+			a:nth-child(2) {
+				margin-left: 0.5em;
+			}
+		}
+		&__author {
+			a {
+				font-size: 1.4rem;
+				text-align: right;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.footer {
+		&__item {
+			flex-basis: 33%;
+
+			&--logo {
+				// flex-basis: 50%;
+
+				img {
+					max-width: 860px;
+				}
+			}
+		}
+		&__title {
+			font-size: 1.8rem;
+		}
+		&__link {
+			font-size: 1.6rem;
+			a:hover {
+				color: $desc-color;
+				cursor: pointer;
+			}
+		}
+	}
+}

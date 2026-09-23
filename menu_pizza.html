@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0"
+		/>
+		<link rel="icon" type="image/png" href="/src/img/fav.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/9bf94860b7.js"
+			crossorigin="anonymous"
+		></script>
+		<title>KSM - Salon kosmetologiczny</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<nav class="nav">
+	<div class="nav__wrap">
+		<div class="nav__logo">
+			<a href="./#">
+				<img src="./dist/img/logo_donmartino.png" alt="logo" />
+			</a>
+		</div>
+		<div class="nav__menu">
+			<ul class="nav__list">
+				<li class="nav__link"><a href="./#about">O nas</a></li>
+				<li class="nav__link"><a href="./#offer">Menu</a></li>
+				<li class="nav__link"><a href="./contact.html">Kontakt</a></li>
+				<li class="nav__link">
+					<img src="./src/img/logo_donmartino.png" alt="logo" />
+				</li>
+			</ul>
+		</div>
+		<div class="nav__burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</nav>
+
+			<main>
+				<section class="page">
+					<div class="page__wrap">
+						<div class="info-buttons">
+							<button class="info-button" data-tooltip="slowniczek">
+								<i class="fa-solid fa-book-open"></i>
+								<span>Słowniczek</span>
+							</button>
+
+							<button class="info-button" data-tooltip="promocja">
+								<i class="fa-solid fa-percent"></i>
+								<span>Promocja</span>
+							</button>
+
+							<button class="info-button" data-tooltip="dowoz">
+								<i class="fa-solid fa-truck"></i>
+								<span>Dowóz</span>
+							</button>
+							<button class="info-button" data-tooltip="dodatki">
+								<i class="fa-solid fa-plus"></i>
+								<span>Dodatki</span>
+							</button>
+						</div>
+
+						<!-- SŁOWNICZEK -->
+
+						<div class="info-modal" id="slowniczek">
+							<div class="info-modal__content">
+								<button class="info-modal__close">
+									<i class="fa-solid fa-xmark"></i>
+								</button>
+
+								<h2>Słowniczek</h2>
+
+								<div class="dictionary">
+									<div class="dictionary__item">
+										<b>Mozzarella FdL</b>
+										<span>ser z mleka krowiego</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Prosciutto Cotto</b>
+										<span>włoska szynka gotowana</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Prosciutto Crudo</b>
+										<span>włoska szynka parmeńska, długo dojrzewająca</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Salami Napoli</b>
+										<span>włoskie salami wieprzowe</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Spianata Piccante</b>
+										<span>włoskie, pikantne salami wieprzowe</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Nduja</b>
+										<span
+											>włoska, pikantna kiełbasa z mielonego mięsa wieprzowego,
+											o miękkiej konsystencji, z dodatkiem chili</span
+										>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Gorgonzola Piccante D.O.P.</b>
+										<span>włoski ser pleśniowy o lekko pikantnym smaku</span>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Grana Padano D.O.P.</b>
+										<span
+											>włoski, dojrzewający, twardy ser z mleka krowiego</span
+										>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Ricotta</b>
+										<span
+											>włoski, niedojrzewający ser, produkowany z serwatki mleka
+											krowiego</span
+										>
+									</div>
+
+									<div class="dictionary__item">
+										<b>Stracciatella</b>
+										<span>środek z sera burrata</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- PROMOCJA -->
+
+						<div class="info-modal" id="promocja">
+							<div class="info-modal__content">
+								<button class="info-modal__close">
+									<i class="fa-solid fa-xmark"></i>
+								</button>
+
+								<h2>Promocja</h2>
+
+								<p class="info-modal__subtitle">Wtorki, środy i czwartki</p>
+
+								<div class="promo-list">
+									<div class="promo-item">
+										<strong>Zamów 2 pizze</strong>
+										<span>3. cia dowolna za 20 zł</span>
+									</div>
+
+									<div class="promo-item">
+										<strong>Zamów 3 pizze</strong>
+										<span>4. ta Margherita za darmo</span>
+									</div>
+
+									<div class="promo-item">
+										<strong>Zamów 4 pizze</strong>
+										<span>5. ta dowolna pizza za darmo</span>
+									</div>
+								</div>
+								<p style="margin-top: 20px; color: #ca0404">
+									<b>
+										Wspomnij o promocji przy składaniu zamówenia. Działa również
+										na dowozy!</b
+									>
+								</p>
+							</div>
+						</div>
+
+						<!-- DOWÓZ -->
+
+						<div class="info-modal" id="dowoz">
+							<div class="info-modal__content">
+								<button class="info-modal__close">
+									<i class="fa-solid fa-xmark"></i>
+								</button>
+
+								<h2>Dowóz</h2>
+
+								<div class="delivery-list">
+									<div class="delivery-item">
+										<div>
+											<strong>Kolbuszowa</strong>
+											<strong>Kolbuszowa Górna</strong>
+											<strong>Kolbuszowa Dolna</strong>
+										</div>
+
+										<span class="delivery-free">
+											GRATIS<br />
+											<small>zamówienia za minimum 50 zł</small>
+										</span>
+									</div>
+
+									<div class="delivery-item">
+										<div>
+											<strong>Werynia</strong>
+											<strong>Bukowiec</strong>
+											<strong>Zarębki</strong>
+											<strong>Świerczów</strong>
+											<strong>Nowa Wieś</strong>
+										</div>
+
+										<span>
+											8 zł<br />
+											<small>zamówienia za minimum 50 zł</small><br />
+											<b>GRATIS</b><br />
+											<small>zamówienia powyżej 200 zł</small>
+										</span>
+									</div>
+
+									<div class="delivery-item">
+										<div>
+											<strong>Cmolas</strong>
+											<strong>Trześń</strong>
+											<strong>Domatków</strong>
+											<strong>Brzezówka</strong>
+										</div>
+
+										<span>
+											10 zł<br />
+											<small>zamówienia za minimum 80 zł</small><br />
+											<b>GRATIS</b><br />
+											<small>zamówienia powyżej 200 zł</small>
+										</span>
+									</div>
+
+									<div class="delivery-item">
+										<div>
+											<strong>Dzikowiec</strong>
+											<strong>Trzęsówka</strong>
+											<strong>Siedlanka</strong>
+										</div>
+
+										<span>
+											12 zł<br />
+											<small>zamówienia za minimum 150 zł</small><br />
+											<b>GRATIS</b><br />
+											<small>zamówienia powyżej 200 zł</small>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="info-modal" id="dodatki">
+							<div class="info-modal__content">
+								<button class="info-modal__close">
+									<i class="fa-solid fa-xmark"></i>
+								</button>
+
+								<h2>Dodatki</h2>
+
+								<div class="extras-list">
+									<div class="extra-item">
+										<span>Sos czosnkowy</span>
+										<b>3 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Ketchup</span>
+										<b>3 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Sos pomidorowy</span>
+										<b>3 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Dodatkowa oliwa (na wynos)</span>
+										<b>2 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Oliwa smakowa (na wynos)</span>
+										<b>3 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>„Zburattuj pickę”</span>
+										<b>13 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Dodatkowy składnik mięsny</span>
+										<b>7 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Dodatkowy składnik warzywny</span>
+										<b>4 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Pudełko na pizzę</span>
+										<b>2 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Pudełko na sałatkę</span>
+										<b>2 zł</b>
+									</div>
+
+									<div class="extra-item">
+										<span>Małe pudełko na kanapkę lub kawałki</span>
+										<b>1 zł</b>
+									</div>
+								</div>
+
+								<div class="extras-notes">
+									<p>Nie podwajamy sera, bo zrobi się „zupa”</p>
+
+									<p>
+										Nie polecamy też przesadzać ze składnikami,<br />
+										włoska pizza najlepiej smakuje z 3/4 dodatkami
+									</p>
+								</div>
+							</div>
+						</div>
+						<h1 class="page__title">Pizza włoska</h1>
+						<p class="page__text">
+							Pizza ma około 34-35 cm. Wykonana z pasją, na długo dojrzewającym
+							cieście.
+						</p>
+						<div class="page__box">
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">1. Marinara</h2>
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>28 zł</b>
+									</p>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<p class="page__answer">
+									<b>Składniki:</b> Podwójny sos pomidorowy, bazylia, oregano,
+									czosnek, oliwa. (Pizza bez sera)
+								</p>
+							</div>
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">2. Margherita</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>30 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									bazylia, Grana Padano D.O.P.
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">3. Bacon</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, boczek,
+									pieczarki, czerwona cebula, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">4. Salame</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami Napoli, czarne oliwki, czerwona cebula
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">
+										5. Diavola (wybierz ostrość przy zamówieniu)
+									</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami SpianataPiccante, czarne oliwki, papryczki jalapeno,
+									płatki chili
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">6. Capriciosa</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									ProsciuttoCotto, duszone pieczarki, czarne oliwki
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">7. Quatro formaggi</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, Gorgonzola
+									Piccante D.O.P., Grana Padano D.O.P., ricotta
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">8. Parma</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>43 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									ProsciuttoCrudo, pomidorki koktajlowe, rukola, Grana Padano
+									D.O.P
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">9. Pollo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kurczak, kukurydza, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">10. Szarpana wieprzowina</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>43 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									szarpana wieprzowina, karmelizowana cebula, ser cheddar,
+									szczypiorek
+								</p>
+							</div>
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">11. Nduja</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami SpianataPiccante, nduja, czerwona cebula, ricotta
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">12. Pera</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, gruszka,
+									Gorgonzola Piccante D.O.P., orzechy włoskie, miód
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">13. Genovese vol 2.0</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> pesto genovese, Mozzarella FdL, kurczak,
+									czerwona cebula, czarne oliwki, suszone pomidory, Grana Padano
+									D.O.P.
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">14. Swojska</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kiełbasa swojska, boczek, pieczarki, czerwona cebula
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">15. Wege</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									pieczarki, oliwki czarne, czerwona cebula, pomidorki, pesto
+									genovese
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">16. Salame con pistacchio</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami Napoli, pistacje, miód
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">17. Mimosa</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, lub crème fraiche,
+									Mozzarella FdL, ProsciuttoCotto, kukurydza
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">18. Verde</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> pesto genovese, Mozzarella FdL, pomidorki z
+									czosnkiem i oliwą, suszone pomidory, Grana Padano D.O.P.
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">19. Salame e funghi</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami Napoli, pieczarki
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">20. Gallina</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kurczak, pieczarki, czerwona cebula
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">
+										21. Samo salami: łagodne lub pikantne
+									</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami Napoli lub Spianata Piccante do wyboru
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">22. Aglio e sole</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									pomidorki z czosnkiem i oliwą, suszone pomidory, stracciatella
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">23. Dolce nduja</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>40 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									salami SpianataPiccante, nduja, miód
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">24. Bella MortadellaPistacchio</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>43 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, mortadela z
+									pistacjami, pesto, pistacje, stracciatella
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">25. Ratatuj</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, boczek,
+									Gorgonzola D.O.P., suszone pomidory, nduja
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">26. Specialita</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									Salami Napoli, karmelizowana cebula, ser cheddar, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">27. Palermitano</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL,
+									ProsciuttoCotto, pesto, pomidorki, ricotta, pistacje
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">28. Mayopollo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kurczak, kukurydza, czerwona cebula, zapiekany majonez,
+									szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">29. Straciatina</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati lub crème fraiche,
+									Mozzarella FdL, ProsciuttoCotto, suszone pomidory,
+									straciatella, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">30. Quatro nduja</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, Gorgonzola
+									D.O.P., Grana Padano D.O.P., ricotta, nduja
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">31. Papa americano</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos BBQ, Mozzarella FdL, kurczak, boczek,
+									karmelizowana cebula, cheddar, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">32. Bianca e gorgonzola</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, boczek,
+									Gorgonzola D.O.P., karmelizowana cebula, Grana Padano D.O.P.,
+									szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">33. Piccantina</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									salami SpIataPiccante, nduja, karmelizowana cebula, mascarpone
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">34. Noci di pollo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kurczak, boczek, kukurydza, karmelizowana cebula, orzechy
+									włoskie, szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">35. Burrata</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati lub pesto, Mozzarella
+									FdL, ProsciuttoCrudo, rukola, pomidorki, Grana Padano D.O.P.,
+									burrata
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">36. Seccopollo</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati, Mozzarella FdL,
+									kurczak, boczek, suszone pomidory, czarne oliwki, jalapeno,
+									szczypiorek
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">37. Monello</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, Salami
+									Napoli, pistacje, karmelizowana cebula, miód
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">38. Fico</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>42 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, Gorgonzola
+									D.O.P., konfitura figowa, krem balsamiczny, Grana Padano
+									D.O.P.
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">39. Carbonara</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>41 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> crème fraiche, Mozzarella FdL, boczek,
+									Pecorino Romano D.O.P., pieprz młotkowany
+								</p>
+							</div>
+
+							<div class="page__item">
+								<div class="page__bar">
+									<h2 class="page__question">40. Zrób to sam</h2>
+
+									<p
+										style="
+											font-size: 2.2rem;
+											margin-right: 1em;
+											margin-left: auto;
+											white-space: nowrap;
+										"
+									>
+										<b>44 zł</b>
+									</p>
+
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+
+								<p class="page__answer">
+									<b>Składniki:</b> sos z pomidorów pelati lub crème fraiche,
+									Mozzarella FdL + 4 składniki do wyboru
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+	<div class="footer__box">
+		<div class="footer__item">
+			<h3 class="footer__title"><a href="./#offer">Menu</a></h3>
+			<ul class="footer__list">
+				<li class="footer__link">
+					<a href="./menu_pizza.html">Pizza włoska</a>
+				</li>
+				<li class="footer__link">
+					<a href="./menu_premium.html">Kanapki premium</a>
+				</li>
+				<li class="footer__link">
+					<a href="./menu_other.html">Przystawki, sałatki i napoje</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__item">
+			<h3 class="footer__title"><a href="./#about">O nas</a></h3>
+			<h3 class="footer__title"><a href="./#contact">Kontakt</a></h3>
+		</div>
+		<div class="footer__item footer__item--logo">
+			<img class="" src="./src/img/logo_donmartino.png" alt="Logo" />
+		</div>
+	</div>
+	<div class="footer__end">
+		<div class="footer__socials">
+			<a href="https://www.facebook.com/DonMartinoKlb" target="_blank"
+				><i class="fa-brands fa-facebook-f"></i
+			></a>
+			<a href="https://www.instagram.com/donmartinoklb/" target="_blank"
+				><i class="fa-brands fa-instagram"></i
+			></a>
+		</div>
+		<p class="footer__author">
+			Pizzeria Don Martino Marcin Bajor<br />
+			<a href="https://lukaszbajor.github.io/CosmosPortfolio/" target="_blank"
+				>Autor: Łukasz Bajor - <span class="footer__year"></span
+			></a>
+		</p>
+	</div>
+</footer>
+
+		</div>
+		<script src="./dist/js/main.min.js"></script>
+	</body>
+</html>
