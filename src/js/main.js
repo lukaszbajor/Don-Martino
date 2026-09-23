@@ -180,15 +180,26 @@ phoneLinks.forEach((phone) => {
 		e.preventDefault();
 
 		const number = phone.getAttribute("href").replace("tel:", "");
+		const icon = phone.querySelector("i");
 
 		try {
 			await navigator.clipboard.writeText(number);
 
-			const originalText = phone.textContent;
-			phone.textContent = "Skopiowano!";
+			// Zapamiętaj tekst numeru
+			const originalText = icon.previousSibling.textContent;
+
+			// Zmień tylko tekst, nie usuwając ikonki
+			icon.previousSibling.textContent = "Skopiowano! ";
+
+			// Ukryj ikonę
+			icon.style.display = "none";
 
 			setTimeout(() => {
-				phone.textContent = originalText;
+				// Przywróć numer
+				icon.previousSibling.textContent = originalText;
+
+				// Przywróć ikonę
+				icon.style.display = "";
 			}, 1500);
 		} catch (error) {
 			console.error("Nie udało się skopiować numeru:", error);
